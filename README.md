@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@deno/mod.js';
+import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@v0.1.1-deno/mod.js';
 ```
 
 #### singletonDimensions( shape )
@@ -90,7 +90,7 @@ var n = singletonDimensions( [ 3, 1, 3 ] );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@deno/mod.js';
+import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@v0.1.1-deno/mod.js';
 
 var shape;
 var n;
