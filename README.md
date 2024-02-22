@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-singleton-dimensions/tags). For example,
+
+```javascript
 import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@v0.2.1-esm/index.mjs';
 ```
 
@@ -95,7 +100,7 @@ var n = singletonDimensions( [ 3, 1, 3 ] );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@v0.2.1-esm/index.mjs';
+import singletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-singleton-dimensions@esm/index.mjs';
 
 var shape;
 var n;
