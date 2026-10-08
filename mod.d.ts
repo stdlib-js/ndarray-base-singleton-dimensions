@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,25 +16,33 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_NDARRAY_BASE_SINGELTON_DIMENSIONS_H
-#define STDLIB_NDARRAY_BASE_SINGELTON_DIMENSIONS_H
+// TypeScript Version: 4.1
 
-#include <stdint.h>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns the number of singleton dimensions.
+*
+* ## Notes
+*
+* -   A singleton dimension is a dimension whose size is equal to `1`.
+*
+* @param shape - array shape
+* @returns number of singleton dimensions
+*
+* @example
+* var n = singletonDimensions( [ 3, 3, 1, 2 ] );
+* // returns 1
+*
+* @example
+* var n = singletonDimensions( [ 2, 2 ] );
+* // returns 0
 */
-int64_t stdlib_ndarray_singleton_dimensions( int64_t ndims, int64_t *shape );
+declare function singletonDimensions( shape: ArrayLike<number> ): number;
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif // !STDLIB_NDARRAY_BASE_SINGELTON_DIMENSIONS_H
+// EXPORTS //
+
+export = singletonDimensions;
